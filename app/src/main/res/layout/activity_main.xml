@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Contabilidad de ingresos / Egresos" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/buscar_ahorro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_vector_search_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Saldo Actual Ahorro"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/montoAhorro_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:text="S/. 0"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/buscar_credito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_vector_search_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Saldo Actual Crédito"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/montoCredito_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:text="S/. 0"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/buscar_efectivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_vector_search_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Saldo Actual Efectivo"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/montoEfectivo_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:text="S/. 0"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:text="Proporción Ingresos / Egresos"/>
+    <ProgressBar
+        android:id="@+id/progressbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/agregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_menu_add"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

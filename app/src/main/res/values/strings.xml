@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GastosApp</string>
+    <string-array name="tipos">
+        <item>Tarjeta de credito</item>
+        <item>Ahorro</item>
+        <item>Efectivo</item>
+    </string-array>
+</resources>
